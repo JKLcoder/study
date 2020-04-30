@@ -9,7 +9,7 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${workspaceFolder}/exe/${fileBasenameNoExtension}.exe",
+				"${workspaceFolder}/code/exe/${fileBasenameNoExtension}.exe", //生成exe的默认路径
 			],
 			"options": {
 				"cwd": "D:\\software\\mingw64\\bin"

@@ -10,7 +10,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/exe/${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}/code/exe/${fileBasenameNoExtension}.exe", //启动exe的默认路径
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
