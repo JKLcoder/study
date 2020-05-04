@@ -1,0 +1,1 @@
+编译环境：Base on Qt.5.5.1 (MSVC 2013,32 bit)
