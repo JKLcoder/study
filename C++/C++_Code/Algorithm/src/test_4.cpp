@@ -44,6 +44,26 @@ void append(ListNode **head, int target)
     }
 }
 
+//对应剑指offer18，但是并不完整，如果涉及到头节点指针变化，则需要传入二级指针
+// ListNode *deleteNode(ListNode *head, int val)
+// {
+//     ListNode *pHead = nullptr;
+
+//     ListNode *p = head;
+//     ListNode *q = head;  //用于记录要删除节点的上一个节点
+
+//     for (; p != nullptr; p = p->next)
+//     {
+//         if (p->val == val)
+//         {
+//             q->next = p->next;
+//             break;
+//         }
+//         q = p;
+//     }
+//     return head;
+// }
+
 void reverseList(ListNode *head)
 {
     if (head == nullptr)
