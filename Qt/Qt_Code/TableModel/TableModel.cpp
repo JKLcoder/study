@@ -1,10 +1,4 @@
-﻿/*总结：
- *1.如果要修改单元格字体、背景等，那么可以通过data函数中的role完成；
- *2.Vector数组通过[]返回的只是其中的数据拷贝，如果我们想要修改其中某个值，必须先使用[]取出修改后，再使用[]设置进去；
- *3.flags必须要调用QAbstractTableModel::flags(index),否则将会出现标签无效的情况；
- *4.setData并不需要我们在程序中主动调用，而是当我们双击单元格进行编辑时就会自动调用；
- */
-#include <QDebug>
+﻿#include <QDebug>
 #include "TableModel.h"
 
 TableModel::TableModel(QObject *parent)
@@ -24,9 +18,8 @@ int TableModel::columnCount(const QModelIndex &parent) const
 
 QVariant TableModel::data(const QModelIndex &index, int role) const
 {
-    if(role != Qt::DisplayRole || !index.isValid())  //eg.也可以设置Qt::FontRole,即字体
+    if(role != Qt::DisplayRole && role != Qt::EditRole|| !index.isValid())  //eg.也可以设置Qt::FontRole,即字体
         return QVariant();
-
     QtData data = vec[index.row()];
 
     switch (index.column()) {

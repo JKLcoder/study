@@ -1,0 +1,49 @@
+body {
+    /* 背景设置 */
+    background-color: antiquewhite;
+    background-image: url('../resourse/girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.main {
+    /* 文字设置 */
+    text-align: left;
+    color: red;
+    text-decoration: blanchedalmond;
+    text-transform: uppercase;
+    text-indent: 20px;
+    /* text-shadow: 2px 2px blanchedalmond; */
+    /* 字体设置 */
+    font-family: "Times New Roman", "Times", "Sans-serif";
+    font-style: italic;
+    font-size: 0.875em;
+    font-weight: bold;
+}
+
+#list {
+    /* 无序列表设置 */
+    list-style-type: square;
+}
+
+a:link {
+    /* 未访问链接*/
+    color: #000000;
+}
+
+a:visited {
+    /* 已访问链接 */
+    color: #00FF00;
+}
+
+a:hover {
+    /* 鼠标移动到链接上 */
+    color: #FF00FF;
+}
+
+a:active {
+    /* 鼠标点击时 */
+    color: #0000FF;
+}

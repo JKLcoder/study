@@ -13,6 +13,19 @@
 * css样式可以内联化到任何html标签之中；
 * img是空标签，也就是说只包含属性，没有闭合标签；
 * 区块元素会重新开始，例如h1，内联元素正好相反，例如img；
+* 表单是一个包含表单元素的区域。表单元素是允许用户在表单中输入内容,比如：文本域(textarea)、下拉列表、单选框(radio-buttons)、复选框(checkboxes)等等。
+* JavaScript使html页面具有更强的动态和交互性；script标签可以用于定义客户端脚本，也可以用于指向外部脚本文件，JavaScript 最常用于图片操作、表单验证以及内容动态更新。
+* scheme://host.domain:port/path/filename
+scheme - 定义因特网服务的类型。最常见的类型是 http
+host - 定义域主机（http 的默认主机是 www）
+domain - 定义因特网域名，比如 runoob.com
+:port - 定义主机上的端口号（http 的默认端口号是 80）
+path - 定义服务器上的路径（如果省略，则文档必须位于网站的根目录中）。
+filename - 定义文档/资源的名称
+* 对于输入处理，超出了html、css、Js的范围，这属于后端，涉及到PHP和ASP语言；也就是说：如果我们点击一个html上的按钮，那么将其进行url编码后，就会发送到服务器；
+
+
+
 
 
 
