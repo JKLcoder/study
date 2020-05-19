@@ -1,2 +1,4 @@
 
 exe/test_7.exe
+*.exe
+*.obj
