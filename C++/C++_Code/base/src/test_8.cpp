@@ -82,4 +82,5 @@ int main()
         return (void* )this;
     }
    当我们读取从文件中读取时，stream.iostate状态一旦出现badbit或failbit，那么就会返回空，也就是false状态；
+6.当一个流对象离开其作用域时，会自动关闭；
 */

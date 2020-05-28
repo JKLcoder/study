@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>关于JavaScript</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>这是一个标题</h1>");
+        document.write("<p>这是一个段落</p>")
+
+    </script>
+    <p id="demo">点击改变</p>
+    <button type="button" onclick="alert('欢迎')">点我</button>
+    <button type="button" onclick="myfunction()">点我</button>
+    <script>
+        function myfunction() {
+            x = document.getElementById("demo");
+            x.innerHTML = "Hello javascript";
+        }
+    </script>
+    <script>
+        function changeImage() {
+            elenent = document.getElementById('myimage')
+            if (element.src.match("bulbon")) {
+                emement.src = "/image/pic_bulboff.gif";
+            }
+            else {
+                element.src = "/images/pic_bulbon.gif";
+            }
+            elenent.style.color = "red";
+        }
+    </script>
+</body>
+
+</html>
